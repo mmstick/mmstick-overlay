@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositories version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name><![CDATA[mmstick]]></name>
+    <description><![CDATA[Rust application overlay]]></description>
+    <homepage>http://github.com/mmstick/mmstick-overlay</homepage>
+    <owner>
+      <email>mmstickman@gmail.com</email>
+    </owner>
+    <source type="git">git://github.com/mmstick/mmstick-overlay.git</source>
+  </repo>
+</repositories>
