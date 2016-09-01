@@ -15,8 +15,7 @@ To add this overlay to Gentoo you will first need to install layman and add this
 
 Following that, you will be able to fetch an updated list of repositories and add my personal repository.
 
-    sudo layman -f
-    sudo layman -a mmstick-overlay
+    sudo layman -f -a mmstick
 
 Once added, you are then able to install the Rust applications that I have developed conveniently in Gentoo.
 

@@ -7,7 +7,7 @@ SRC_URI="https://github.com/mmstick/parallel/archive/master.tar.gz -> ${P}.tar.g
 RESTRICT="mirror"
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 ~x86"
 IUSE="native"
 DEPEND="dev-lang/rust
         dev-util/cargo"
@@ -18,7 +18,6 @@ src_unpack() {
 }
 
 src_compile() {
-    echo ${P}
     use native && RUSTFLAGS="-C target-cpu=native"
     cargo build --release
 }
