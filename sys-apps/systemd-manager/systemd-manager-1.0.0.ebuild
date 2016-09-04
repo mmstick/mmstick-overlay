@@ -50,6 +50,6 @@ DEPEND="${RDEPEND}
     dev-lang/rust"
 
 src_install() {
-	emake DESTDIR="${D}" install
+	emake DESTDIR="${D}/usr" install
 }
 
