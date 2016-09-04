@@ -3,6 +3,7 @@
 This repository contains Gentoo ebuilds for Rust applications that I have developed. The applications that are
 available for install are:
 
+- sys-apps/systemd-manager
 - sys-process/parallel-rust
 
 # Installation Instructions

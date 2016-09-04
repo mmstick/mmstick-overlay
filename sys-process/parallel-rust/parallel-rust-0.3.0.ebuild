@@ -11,18 +11,3 @@ KEYWORDS="amd64 x86"
 IUSE="native"
 DEPEND="dev-lang/rust
         dev-util/cargo"
-
-src_unpack() {
-    unpack "${A}"
-    mv parallel-${PV} ${P}
-}
-
-src_compile() {
-    use native && RUSTFLAGS="-C target-cpu=native"
-    cargo build --release
-}
-
-src_install() {
-    dobin target/release/parallel
-    dodoc README.md
-}
