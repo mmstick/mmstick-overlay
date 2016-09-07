@@ -10,3 +10,8 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 DEPEND="dev-lang/rust
         dev-util/cargo"
+
+src_install() {
+    dobin target/release/permutate
+    dodoc README.bin
+}

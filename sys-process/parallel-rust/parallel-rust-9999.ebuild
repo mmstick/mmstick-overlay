@@ -10,3 +10,18 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 DEPEND="dev-lang/rust
         dev-util/cargo"
+
+src_unpack() {
+    unpack "${A}"
+    mv parallel-${PV} ${P}
+}
+
+src_compile() {
+    cargo build --release
+}
+
+src_install() {
+    dobin target/release/parallel
+    dodoc README.md
+}
+
