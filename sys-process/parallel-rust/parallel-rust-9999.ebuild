@@ -8,6 +8,5 @@ RESTRICT="mirror"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="native"
 DEPEND="dev-lang/rust
         dev-util/cargo"
